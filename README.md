@@ -54,6 +54,7 @@ See also the [man page of tar](https://man7.org/linux/man-pages/man1/tar.1.html)
 
 ## Done
 Told you - super easy!
+What, you encountered problems? [Let me know!](https://github.com/linustux/PackagingMonoGameForLinux/issues)
 
 You can now distribute your YourGame.tar.gz archive as a Linux release in exactly the same way as the .zip for Windows release.
 
