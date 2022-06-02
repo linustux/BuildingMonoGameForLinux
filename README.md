@@ -25,7 +25,7 @@ or:
 
 `$ /full/path/to/YourGame/bin/Release/netcoreapp3.1/linux-x64/publish/YourGame`
 
-Your game should start as normal. In case you get an error, [see below](https://github.com/linustux/BuildingMonoGameForLinux/new/main?readme=1#troubleshooting).
+Your game should start as normal. In case you get an error, [see below under ](https://github.com/linustux/BuildingMonoGameForLinux/tree/main#troubleshooting).
 
 ## 3. Archive it as tar.gz
 It is recommended to distribute your game as a tar.gz archive as this preserves file permissions.
