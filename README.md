@@ -6,7 +6,7 @@ Well, if you have a standard MonoGame setup and happen to be using Desktop OpenG
 
 Assuming you already have your development environment [setup for targeting Desktop OpenGL](https://docs.monogame.net/articles/getting_started/0_getting_started.html), all it takes are three super easy steps:
 
-## 1 Build your game
+## 1 - Build your game
 As described in [the monogame documentation](https://docs.monogame.net/articles/packaging_games.html#building-and-packaging-for-linux), the command for building a Linux standalone is this:
 
 `$ dotnet publish -c Release -r linux-x64 /p:PublishReadyToRun=false /p:TieredCompilation=false --self-contained`
@@ -15,7 +15,7 @@ Note that I use the dollar-sign to indicate that the command does not need (and 
 
 The command is the same on any operating system. It does of course require you to have the .NET SDK installed, which you already have if you are able to build a release for Windows. If not, [the MonoGame documentation](https://docs.monogame.net/articles/getting_started/0_getting_started.html) has the details.
 
-## 2 Check if your game runs on Linux.
+## 2 - Check if your game runs on Linux.
 
 Running the build from the Linux commandline:
 
@@ -27,7 +27,7 @@ or:
 
 Your game should start as normal. In case you get an error, see below in the [troubleshooting section](https://github.com/linustux/PackagingMonoGameForLinux#troubleshooting).
 
-## 3. Archive it as tar.gz
+## 3 - Archive it as tar.gz
 It is recommended to distribute your game as a tar.gz archive as this preserves file permissions.
 
 ### Linux / Mac:
