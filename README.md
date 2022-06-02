@@ -2,7 +2,7 @@
 (By Linux I am of course referring to [GNU/Linux](https://www.gnu.org/gnu/linux-and-gnu.en.html))
 
 Releasing your game for Linux is super hard, right?
-Well, if you have a standard MonoGame setup and happen to be using Desktop OpenGL for rendering your graphics, you're in luck!
+Well, if you have a standard MonoGame setup and happen to be using Desktop OpenGL for rendering your graphics, you're in luck.
 
 Assuming you already have your development environment [setup for targeting Desktop OpenGL](https://docs.monogame.net/articles/getting_started/0_getting_started.html), all it takes are three super easy steps:
 
@@ -53,7 +53,7 @@ See also the [man page of tar](https://man7.org/linux/man-pages/man1/tar.1.html)
 [Source](https://stackoverflow.com/questions/10773880/how-to-create-tar-gz-archive-file-in-windows)
 
 ## Done
-Told you - super easy!
+Told you - super easy.
 What, you encountered problems? [Let me know!](https://github.com/linustux/PackagingMonoGameForLinux/issues)
 
 You can now distribute your YourGame.tar.gz archive as a Linux release in exactly the same way as the .zip for Windows release.
