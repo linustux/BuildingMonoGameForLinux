@@ -9,9 +9,9 @@ Assuming you already have your development environment [setup for targeting Desk
 ## 1 Build your game
 As described in [the monogame documentation](https://docs.monogame.net/articles/packaging_games.html#building-and-packaging-for-linux), the command for building a Linux standalone is this:
 
-`$ dotnet publish -c Release -r linux-x64 /p:PublishReadyToRun=false /p:TieredCompilation=false --self-contained`
+`dotnet publish -c Release -r linux-x64 /p:PublishReadyToRun=false /p:TieredCompilation=false --self-contained`
 
-Note that I use the dollar-sign to indicate that the command does not need (and thus should not be executed with) administrator or superuser privileges. You should _not_ include the '$' when copying the commands.
+Note that _no_ command in this guide needs administrator or superuser privileges, so you should not execute them as root or administrator.
 
 The command is the same on any operating system. It does of course require you to have the .NET SDK installed, which you already have if you are able to build a release for Windows. If not, [the MonoGame documentation](https://docs.monogame.net/articles/getting_started/0_getting_started.html) has the details.
 
@@ -19,11 +19,11 @@ The command is the same on any operating system. It does of course require you t
 
 Running the build from the Linux commandline:
 
-`$ ./relative/path/to/YourGame/bin/Release/netcoreapp3.1/linux-x64/publish/YourGame`
+`./relative/path/to/YourGame/bin/Release/netcoreapp3.1/linux-x64/publish/YourGame`
 
 or:
 
-`$ /full/path/to/YourGame/bin/Release/netcoreapp3.1/linux-x64/publish/YourGame`
+`/full/path/to/YourGame/bin/Release/netcoreapp3.1/linux-x64/publish/YourGame`
 
 Your game should start as normal. In case you get an error, see below in the [troubleshooting section](https://github.com/linustux/PackagingMonoGameForLinux#troubleshooting).
 
@@ -34,11 +34,11 @@ It is recommended to distribute your game as a tar.gz archive as this preserves 
 
 The CLI command for creating a tar.gz archive is:
 
-`$ tar -czvf [[filename.tar.gz]] directory`
+`tar -czvf [[filename.tar.gz]] directory`
 
 So for your game this would look somewhat like this:
 
-`$ tar -czvf YourGameName.tar.gz YourGame/bin/Release/netcoreapp3.1/linux-x64/publish`
+`tar -czvf YourGameName.tar.gz YourGame/bin/Release/netcoreapp3.1/linux-x64/publish`
 
 [Source for Linux](https://www.cyberciti.biz/faq/how-to-create-tar-gz-file-in-linux-using-command-line/), tested on Arch Linux.
 
@@ -62,8 +62,8 @@ You can now distribute your YourGame.tar.gz archive as a Linux release in exactl
 To run your game, your customers can simply run the following two commands:
 
 ```Bash
-$ tar -xzvf YourGameName.tar.gz
-$ ./publish/YourGameName
+tar -xzvf YourGameName.tar.gz
+./publish/YourGameName
 
 ```
 
