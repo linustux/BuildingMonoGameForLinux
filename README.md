@@ -71,6 +71,9 @@ Of course, if you rename the publish folder to the name of your game before arch
 
 You may also want to look into enhancing your release with a .desktop file to allow distros to display your game with desktop menu icons etc.
 
+[How to create desktop entries blog post](https://www.maketecheasier.com/create-desktop-file-linux/)
+
+[ArchWiki on desktop entries](https://wiki.archlinux.org/title/Desktop_entries)
 
 ## Troubleshooting
 
